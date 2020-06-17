@@ -97,13 +97,13 @@ function createOutput(value) {
 }
 
 function createSentence() {
-  openingIndex = getRandomInteger(0, openings.length - 1);
-  adjectiveIndex = getRandomInteger(0, adjectives.length - 1);
-  nounIndex = getRandomInteger(0, nouns.length - 1);
-  proNounIndex = getRandomInteger(0, proNouns.length - 1);
-  verbIndex = getRandomInteger(0, verbs.length);
-  adverbIndex = getRandomInteger(0, adverbs.length - 1);
-  closingIndex = getRandomInteger(0, closings.length - 1);
+  const openingIndex = getRandomInteger(0, openings.length - 1);
+  const adjectiveIndex = getRandomInteger(0, adjectives.length - 1);
+  const nounIndex = getRandomInteger(0, nouns.length - 1);
+  const proNounIndex = getRandomInteger(0, proNouns.length - 1);
+  const verbIndex = getRandomInteger(0, verbs.length);
+  const adverbIndex = getRandomInteger(0, adverbs.length - 1);
+  const closingIndex = getRandomInteger(0, closings.length - 1);
 
   return (
     openings[openingIndex] +
@@ -123,6 +123,6 @@ function createSentence() {
 }
 
 for (i = 0; i < 10; i++) {
-  sentence = createSentence();
+  const sentence = createSentence();
   createOutput(sentence);
 }
